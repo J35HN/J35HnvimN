@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-    ensure_installed = { "lua_ls", "cmake", "cssls", "html", "quick_lint_js", "clangd" }
+    ensure_installed = { "lua_ls", "cmake", "cssls", "html", "quick_lint_js", "tsserver", "vtsls", "biome", "clangd" }
 })
 
 local on_attach = function(_, _)

@@ -2,14 +2,18 @@ require('kanagawa-paper').setup({
     undercurl = true,
     transparent = true,
     gutter = false,
-    --dimInactive = true, -- disabled when transparent
+    dimInactive = false, -- disabled when transparent
     terminalColors = true,
     commentStyle = { italic = true },
     functionStyle = { italic = false },
     keywordStyle = { italic = false, bold = false },
     statementStyle = { italic = false, bold = false },
     typeStyle = { italic = false },
-    colors = { theme = {}, palette = {} }, -- override default palette and theme colors
+    colors = { theme = {}, palette = {
+        fujiGray = "#FFFFFF",
+        waveBlue1 = "#FFFFFF"
+        }
+    }, -- override default palette and theme colors
     overrides = function()  -- override highlight groups
         return {}
     end,
