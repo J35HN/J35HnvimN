@@ -18,6 +18,7 @@ return require('packer').startup(function(use)
     use('tpope/vim-fugitive')
 
     use('sho-87/kanagawa-paper.nvim')
+    use { 'catppuccin/nvim', as = "catppuccin" }
 
     use('nvim-tree/nvim-web-devicons')
 

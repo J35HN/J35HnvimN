@@ -20,4 +20,4 @@ require('kanagawa-paper').setup({
 })
 
 -- setup must be called before loading
-vim.cmd("colorscheme kanagawa-paper")
+--vim.cmd("colorscheme kanagawa-paper")
