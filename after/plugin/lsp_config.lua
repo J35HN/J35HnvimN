@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-    ensure_installed = { "lua_ls", "cmake", "cssls", "html", "quick_lint_js", "tsserver", "vtsls", "biome", "clangd" }
+    ensure_installed = { "lua_ls", "quick_lint_js", "clangd" }
 })
 
 local on_attach = function(_, _)
@@ -15,22 +15,7 @@ require("lspconfig").lua_ls.setup {
     capabilities = capabilities
 }
 
-require("lspconfig").cmake.setup {
-    on_attach = on_attach,
-    capabilities = capabilities
-}
-
-require("lspconfig").cssls.setup {
-    on_attach = on_attach,
-    capabilities = capabilities
-}
-
 require("lspconfig").clangd.setup {
-    on_attach = on_attach,
-    capabilities = capabilities
-}
-
-require("lspconfig").html.setup {
     on_attach = on_attach,
     capabilities = capabilities
 }
