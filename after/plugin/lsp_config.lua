@@ -22,7 +22,8 @@ require("lspconfig").clangd.setup {
 
 require("lspconfig").quick_lint_js.setup {
     on_attach = on_attach,
-    capabilities = capabilities
+    capabilities = capabilities,
+    root_dir = function() return vim.loop.cwd() end
 }
 
 require("lspconfig").cssls.setup {
